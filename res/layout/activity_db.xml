@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcherbg1"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_marginBottom="44dp"
+        android:onClick="export_out"
+        android:text="导出支出数据" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp"
+        android:onClick="Return"
+        android:text="取消返回" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_marginBottom="44dp"
+        android:onClick="export_in"
+        android:text="导出收入数据" />
+    
+</RelativeLayout>

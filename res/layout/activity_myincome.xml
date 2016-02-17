@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcherbg1"
+    tools:context=".MainActivity" >
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="我的收入"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Return"
+        android:text="返回" />
+	
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="TJ"
+        android:text="统计" />
+    
+    <!-- 收入详情 -->
+    
+    <TextView
+        android:id="@+id/showView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showView2"
+        android:layout_alignBottom="@+id/showView2"
+        android:layout_alignLeft="@+id/showView1"
+        android:text="money"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showView2"
+        android:layout_below="@+id/showView2"
+        android:layout_marginTop="32dp"
+        android:text="时间："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showView4"
+        android:layout_alignBottom="@+id/showView4"
+        android:layout_alignLeft="@+id/showView3"
+        android:text="time"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showView1"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/showView3"
+        android:text="金额："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showView4"
+        android:layout_below="@+id/showView4"
+        android:layout_marginTop="32dp"
+        android:text="类别："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showView6"
+        android:layout_toRightOf="@+id/showView2"
+        android:text="Medium Text"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showView8"
+        android:layout_alignBottom="@+id/showView8"
+        android:layout_alignLeft="@+id/showView7"
+        android:text="place"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showView10"
+        android:layout_alignLeft="@+id/showView9"
+        android:text="remark"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/showbutton1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:visibility="gone"
+        android:onClick="ShowReturn"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/showView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="收入详情"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/showView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/showView8"
+        android:layout_below="@+id/showView8"
+        android:layout_marginTop="32dp"
+        android:text="备注："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/showView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/showView6"
+        android:layout_below="@+id/showView6"
+        android:layout_marginTop="32dp"
+        android:text="付款方："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+	<!-- 收入详情 -->
+	
+	
+	<!-- 收入统计 -->
+	
+	<TextView
+        android:id="@+id/TView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="收入统计"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TView4"
+        android:layout_alignBottom="@+id/TView4"
+        android:layout_alignLeft="@+id/spinner1"
+        android:text="Money"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/spinner1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TView1"
+        android:visibility="gone"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/TView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/spinner1"
+        android:text="起始日期："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/spinner2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner1"
+        android:visibility="gone"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/TView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/spinner2"
+        android:text="结束日期："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/TView5"
+        android:text="收入金额："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/Tbutton1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="46dp"
+        android:visibility="gone"
+        android:onClick="Treturn"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/Tbutton2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Tbutton1"
+        android:layout_alignBottom="@+id/Tbutton1"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:onClick="Jisuan"
+        android:text="计算" />
+	
+	<!-- 收入统计 -->
+
+    
+	
+</RelativeLayout>

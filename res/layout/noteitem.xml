@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/itemView1"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:text="ID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/itemView2"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_weight="0.73"
+        android:text="内容"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/itembutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:text="删除" />
+
+</LinearLayout>

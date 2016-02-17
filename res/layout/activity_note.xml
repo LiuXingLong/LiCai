@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcherbg1"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_marginBottom="25dp"
+        android:onClick="Noteselect"
+        android:text="查看便签" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="192dp"
+        android:onClick="Return"
+        android:text="取消返回" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:onClick="Noteadd"
+        android:text="新增便签" />
+    
+    
+    
+    <!-- 新增便签 -->
+     
+     
+	<TextView
+        android:id="@+id/addtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="新增便签"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/addtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:visibility="gone"
+        android:text="请输入便签，不超过100字。" />
+
+    <EditText
+        android:id="@+id/addeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@+id/addtextView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:visibility="gone"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addbutton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addeditText1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:onClick="Saveadd"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/addbutton2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addbutton1"
+        android:layout_alignBottom="@+id/addbutton1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:visibility="gone"
+        android:onClick="Noneadd"      
+        android:text="取消" />
+         
+    <!-- 新增便签   android:visibility="gone"-->
+
+
+
+    
+    <!-- 查看便签 -->    
+     <Button
+        android:id="@+id/Seebutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:onClick="NoteseeR"
+        android:text="返回" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"         
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+    </ListView>	   
+    <!-- 查看便签 -->
+	
+	
+	
+	<!-- 修改便签 -->
+	
+	<TextView
+        android:id="@+id/updataView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="便签信息："
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/updataView2"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/updataView1"
+        android:visibility="gone"
+        android:text="内容"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/updataView3"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/updataView1"
+        android:visibility="gone"
+        android:focusable="false"
+        android:text="内容"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+    <Button
+        android:id="@+id/updatabutton1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"        
+        android:visibility="gone"
+        android:onClick="updatainfo"
+        android:text="修改" />
+
+    <Button
+        android:id="@+id/updtabutton2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:onClick="saveupdatainfo"
+        android:text="保存" />
+    
+    <Button
+        android:id="@+id/updtabutton3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:onClick="returnupdatainfo"
+        android:text="返回" />
+    
+	<!-- 修改便签 -->
+   
+   
+</RelativeLayout>

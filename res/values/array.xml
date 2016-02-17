@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="categorys">
+        <item>早餐</item>
+        <item>中餐</item>
+        <item>晚餐</item>
+        <item>夜宵</item>
+    </string-array>
+    <string-array name="category1s">
+       <item>工资</item>
+       <item>奖金</item>
+       <item>红包</item>
+   </string-array>
+</resources>
